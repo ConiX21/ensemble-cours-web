@@ -1,0 +1,16 @@
+$font-size:26px;
+$title-color:#46b3d7;
+
+@font-face {
+  font-family: "ArefRuqaa-Bold.ttf";
+  src: url("../../fonts/ArefRuqaa-Bold.ttf"); }
+
+body {
+  font-family: "ArefRuqaa-Bold.ttf";
+}
+
+a:hover{
+  transform: rotate(20deg);
+}
+
+

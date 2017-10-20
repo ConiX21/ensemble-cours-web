@@ -1,0 +1,38 @@
+$div:500;
+$page-size:1200;
+
+
+@function calculate-p-width-percent($max-size){
+    @debug  $div;
+
+    @if $max-size > $page-size
+    {
+        @error("bad size");
+    }
+     @else{
+         @return (percentage($max-size / $page-size));
+    }
+}
+
+
+@function calculate-p-width-px($max-size){
+
+    @if $max-size > $page-size
+    {
+        @error("bad size");
+    }
+    @else{
+          @return ($page-size - $max-size) * 1px;
+    }
+ 
+}
+
+
+p.first{
+    width: calculate-p-width-percent($div)
+}
+
+
+p.last{
+    width: calculate-p-width-px($div);
+}

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>SASS</title>
+    <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/functions.css">
+    <style>
+        .btn.btn-primary{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>5 -  Functions</h1>
+    <p class="first">
+        Ipsum est sit adipisicing est culpa magna sit ipsum sit voluptate.
+        Labore amet exercitation deserunt officia. Culpa magna amet fugiat in deserunt aute consequat sit enim. Aliquip irure esse eiusmod nulla sunt duis irure quis.
+    </p>
+    <p class="last">
+        Ipsum est sit adipisicing est culpa magna sit ipsum sit voluptate.
+        Labore amet exercitation deserunt officia. Culpa magna amet fugiat in deserunt aute consequat sit enim. Aliquip irure esse eiusmod nulla sunt duis irure quis.
+    </p>
+
+     <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Demo Code SASS</a>
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">SASS Code</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+@function calculate-p-width-percent($max-size){
+    @debug  $div;
+
+    @if $max-size > $page-size
+    {
+        @error("bad size");
+    }
+     @else{
+         @return (percentage($max-size / $page-size));
+    }
+}
+                                </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

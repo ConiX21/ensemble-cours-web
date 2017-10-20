@@ -1,0 +1,94 @@
+.grid-1 {
+  width: 220px;
+  background-color: rgba(84, 225, 35, 0.75);
+  border-radius: 4px;
+  margin-left: 200px; }
+
+.grid-2 {
+  width: 440px;
+  background-color: rgba(84, 225, 35, 0.5);
+  border-radius: 8px;
+  margin-left: 400px; }
+
+.grid-3 {
+  width: 660px;
+  background-color: rgba(84, 225, 35, 0.25);
+  border-radius: 12px;
+  margin-left: 600px; }
+
+.grid-4 {
+  width: 880px;
+  background-color: rgba(84, 225, 35, 0);
+  border-radius: 16px;
+  margin-left: 800px; }
+
+.while-4 {
+  width: 24px; }
+
+.while-3 {
+  width: 23px; }
+
+.while-2 {
+  width: 22px; }
+
+.while-1 {
+  width: 21px; }
+
+aside {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4); }
+  aside .photo-elvis {
+    background: url("../../../../content/avatars/elvis.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-elvis:hover {
+      transform: rotate(12deg); }
+  aside .photo-holmes {
+    background: url("../../../../content/avatars/holmes.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-holmes:hover {
+      transform: rotate(22deg); }
+  aside .photo-monroe {
+    background: url("../../../../content/avatars/monroe.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-monroe:hover {
+      transform: rotate(9deg); }
+  aside .photo-potter {
+    background: url("../../../../content/avatars/potter.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-potter:hover {
+      transform: rotate(11deg); }
+  aside .photo-serduchka {
+    background: url("../../../../content/avatars/serduchka.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-serduchka:hover {
+      transform: rotate(19deg); }
+  aside .photo-terminator {
+    background: url("../../../../content/avatars/terminator.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: all 1s ease-in-out; }
+    aside .photo-terminator:hover {
+      transform: rotate(1deg); }
+
+body {
+  background: #d0060c; }
+
+/*# sourceMappingURL=../maps/examples/sass/controls-directives.css.map */

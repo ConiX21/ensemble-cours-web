@@ -1,0 +1,16 @@
+
+@font-face{
+    font-family: 'myFont';
+    src:url("../../../fonts/GloriaHallelujah.ttf");
+}
+
+  body {
+    font-family: 'myFont';
+      background: url('../../../content/logo.svg'), radial-gradient(#9c0e7c, #b37399);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: top left;
+  }
+  h1{
+    font-size: 32px;
+  }

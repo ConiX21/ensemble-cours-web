@@ -1,0 +1,15 @@
+@import 'import.scss';
+@import 'media.scss';
+
+h1{
+    color:$title-color;
+    font-size: $font-size;
+    @extend .special-title;
+}
+
+
+.item {
+    @extend a:hover;
+    color: #3d89c7;
+}
+

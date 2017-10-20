@@ -1,0 +1,36 @@
+
+@mixin button($text, $background) {
+    color: $text;
+    background-color: $background;
+    border-color: $background;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.red-button {
+  @include button(#fff, #d9534f);
+}
+
+.green-button {
+  @include button(#fff, #5cb85c);
+}
+
+.blue-button {
+  @include button(#fff, #5bc0de);
+}

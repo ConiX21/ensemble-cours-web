@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>SASS</title>
+    <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/mixin.css">
+    <style>
+        .btn.btn-primary{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>4 - Mixin</h1>
+    <br/>
+    <button class="btn green-button">Validation</button>
+    <button class="btn blue-button">Information</button>
+    <button class="btn red-button">Error</button>
+
+    <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Demo Code SASS</a>
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">SASS Code</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+@mixin button($text, $background) {
+    color: $text;
+    background-color: $background;
+    border-color: $background;
+}
+                                </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

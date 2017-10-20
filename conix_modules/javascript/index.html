@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/javascript.css">
+
+    <style>
+        body{
+
+            margin-top:10px;
+        }
+
+        h3{
+            font-size: 18px;
+            color:#ffcc00;
+        }
+
+        .btn-primary
+        {
+            background-color: #ffeb99;
+            border-color: #ffcc00;
+             
+        }
+
+        .btn-primary:hover
+        {
+            background-color: #ffeb99;
+            border-color: #ffcc00;
+        }
+
+        .thumbnail{
+            background: rgba(255,255,255,.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--1-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>1 - Variables</h3>
+                        <p>Une variable est un objet repéré par son nom, pouvant contenir 
+des données, qui pourront être modifiées lors de l'exécution du programme. 
+En Javascript, les noms de variables peuvent être aussi long que l'on désir</p>
+                        <p>
+                            <a href="./examples/1-variables.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>2 -Types et valeurs</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/2-typesAndValues.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>3 - Conditions</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/3-conditions.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+             <!--4-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>4 -  Boucles</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/boucles.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--5-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>5 - Fonctions</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/functions.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/javascript-logo.png" alt="...">
+                    <div class="caption">
+                        <h3>6 - Prototype</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/functions.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
+        });
+    </script>
+</body>
+
+</html>

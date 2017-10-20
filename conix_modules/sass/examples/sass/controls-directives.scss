@@ -1,0 +1,55 @@
+$class-slug:"grid";
+$pere-noel:"OhOhOh";
+
+@for $i from 1 through 4 {
+  .#{$class-slug}-#{$i}{
+    width: (220*$i)* 1px;
+    background-color:fade-out(#54e123,((100 / 4) *  $i)/100);
+    border-radius: #{$i * 4}px;
+    margin-left:#{$i * 200}px;
+  }
+}
+
+$types: 4;
+$type-width: 20px;
+
+@while $types > 0 {
+  .while-#{$types}{
+    width: $type-width + $types;
+    $types: $types - 1;
+  }
+}
+
+$list: elvis holmes monroe potter serduchka terminator;
+
+aside{
+      border:1px solid grey;
+      padding : 10px;
+      border-radius:8px;
+      background:fade-out( white, 0.6);
+
+
+  @each $author in $list
+  {
+    $cpt:random(30);
+      .photo-#{$author}{
+        background:url("../../../../content/avatars/#{$author}.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        display:inline-block;
+        transition:all 1s ease-in-out; 
+        &:hover{
+          transform:rotate(#{$cpt}deg);
+        }
+      }
+  }
+}
+
+
+@if $pere-noel == "OhOhOh"
+{
+  body{
+    background: #d0060c;
+  }
+}
+

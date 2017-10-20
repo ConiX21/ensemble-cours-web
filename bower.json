@@ -1,0 +1,21 @@
+{
+  "name": "sass-cours",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "2",
+    "viscompass": "compass#^0.7.1",
+    "impress-js": "impress.js#^0.6.0",
+    "masonry": "^4.1.1"
+  }
+}

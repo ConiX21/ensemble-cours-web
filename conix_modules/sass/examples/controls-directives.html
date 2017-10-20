@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>SASS</title>
+    <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/controls-directives.css">
+     <style>
+        .btn.btn-primary{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>3 - Controls directives</h1>
+    <p class="grid-1">Irure magna anim nulla quis nostrud. Reprehenderit cillum commodo exercitation magna enim ex cupidatat aliquip sunt do
+        ut sunt velit nisi. Non qui nostrud do veniam tempor. Pariatur aute officia ipsum pariatur aliquip fugiat culpa esse
+        proident. Enim minim eu nisi occaecat laborum pariatur fugiat. Esse aliqua enim quis elit ullamco proident excepteur
+        et ea laborum nulla. Aute officia mollit tempor enim aliqua consequat est pariatur dolore non dolor enim eiusmod.</p>
+    <p class="grid-2">
+        Fugiat do occaecat cupidatat laboris tempor ea excepteur laborum pariatur veniam nisi culpa. Consectetur enim enim Lorem
+        proident cillum ut. Eu eiusmod cillum ex irure esse id cupidatat incididunt nostrud exercitation. Id deserunt veniam
+        qui laborum irure ullamco sunt. Cupidatat excepteur commodo anim Lorem. Irure adipisicing aliquip minim id magna.
+        Ullamco nulla tempor excepteur aliquip minim.
+    </p>
+    <p class="grid-3">
+        Pariatur eu adipisicing laborum excepteur. Duis veniam non magna non ullamco quis sint commodo aliquip. Aliqua nulla commodo
+        ipsum aute ea ut velit aliqua nostrud. Sint laborum velit dolor reprehenderit cupidatat esse elit nostrud anim.
+    </p>
+    <aside>
+        <div class="photo-monroe">
+        </div>
+        <div class="photo-terminator">
+        </div>
+        <div class="photo-holmes">
+        </div>
+        <div class="photo-serduchka">
+        </div>
+        <div class="photo-elvis">
+        </div>
+    </aside>
+
+    <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Demo Code SASS</a>
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">SASS Code</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+@for $i from 1 through 4 {
+  .#{$class-slug}-#{$i}{
+    width: (220*$i)* 1px;
+    background-color:fade-out(#54e123,((100 / 4) *  $i)/100);
+    border-radius: #{$i * 4}px;
+    margin-left:#{$i * 200}px;
+  }
+}
+                                </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

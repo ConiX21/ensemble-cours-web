@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/sass.css">
+
+    <style>
+        body{
+
+            margin-top:10px;
+        }
+
+        h3{
+            font-size: 18px;
+            color:#9c0e7c;
+        }
+
+        .btn-primary
+        {
+            background-color: #b37399;
+            border-color: #9c0e7c;
+             
+        }
+
+        .btn-primary:hover
+        {
+            background-color: #d5b0c6;
+            border-color: #9c0e7c;
+        }
+
+        .thumbnail{
+            background: rgba(255,255,255,.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--1-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/sass-icon.svg" alt="...">
+                    <div class="caption">
+                        <h3>1 - Sass Scripts</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/sass-scripts.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/sass-icon.svg" alt="...">
+                    <div class="caption">
+                        <h3>2 -Rules and Directives</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/rules-directives.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/sass-icon.svg" alt="...">
+                    <div class="caption">
+                        <h3>3 - Control Directives & Expressions</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/controls-directives.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+             <!--4-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/sass-icon.svg" alt="...">
+                    <div class="caption">
+                        <h3>4 -  Mixin Directives</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/mixin.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--5-->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="../../content/sass-icon.svg" alt="...">
+                    <div class="caption">
+                        <h3>5 - Function Directives</h3>
+                        <p>En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript.
+                            SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires.
+                            SassScript peut être utilisé avec n'importe quelle valeur de propriété.</p>
+                        <p>
+                            <a href="./examples/function.html" class="btn btn-primary" role="button">Go !</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 200
+        });
+    </script>
+</body>
+
+</html>

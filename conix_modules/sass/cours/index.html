@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <meta>
+    <link href="../../../bower_components/impress-js/css/impress-demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/sass.css">
+    <style>
+        .reduce-p{
+            font-size: 26px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="impress">
+        <!--Intro-->
+        <div id="slide1" class="step slide" data-x="0">
+            <q>
+                <span>SASS Présentation</span>
+                <p class="reduce-p">SASS est un langage de génération dynamique de feuilles de style initialement développé par Hampton Catlin et Nathalie Weizenbaum. Sass est un métalangage de feuilles de style en cascade (CSS). C'est un langage de script qui est interprété en CSS.</p>
+            </q>
+        </div>
+        <div id="slide2" class="step slide" data-x="1000">
+            <q>
+                <span>Installation avec Gulp</span>
+                <p class="reduce-p">Installer gulp(global) dans NodeJS (<i>npm install -g --save gulp</i>)</p>
+                <p class="reduce-p">Installer gulp(local) dans NodeJS (<i>npm install --save gulp</i>)</p>
+                <p class="reduce-p">Installer le gulp pipe de SASS (<i>npm install gulp-sass --save</i>)</p>
+                <p class="reduce-p">Creer un fichier gulpfile.js (cf. fichier dans projet)</p>
+            </q>
+        </div>
+        <div id="slide3" class="step slide" data-x="2000">
+            <q>
+                <span>Lancer une tâche Gulp</span>
+                <p class="reduce-p">Ouvrir une console ou un terminal (<i>npm install -g --save gulp</i>)</p>
+                <p class="reduce-p">Se placer à la racine du projet lancer la commande(<i>gulp sass</i>)</p>
+                <p class="reduce-p">Se placer à la racine du projet lancer la commande(<i>gulp sass:watch</i>)</p>
+            </q>
+        </div>
+
+        <!--1-->
+        <div id="slide4" class="step slide" data-x="0" data-y="1000">
+            <q>
+                <span>1 - SASS Script</span>
+                <p class="reduce-p">
+En plus de la syntaxe CSS simple, Sass prend en charge un petit ensemble d'extensions appelé SassScript. SassScript permet aux propriétés d'utiliser des variables, l'arithmétique et des fonctions supplémentaires. SassScript peut être utilisé dans n'importe quelle valeur de propriété</p>
+            </q>
+        </div>
+        <div id="slide5" class="step slide" data-x="1000" data-y="1000">
+            <q>
+                <span>1.1 - Variables</span>
+                <p class="reduce-p">
+La manière la plus simple d'utiliser SassScript est d'utiliser des variables. Les variables commencent par des signes de dollar et sont définies comme des propriétés CSS:</p>
+            </q>
+        </div>
+        <div id="slide6" class="step slide" data-x="2000" data-y="1000">
+            <q>
+                <span>1.2 - Les types</span>
+                <p class="reduce-p">SassScript prend en charge sept types de données principaux:
+                numbers ( 1.2, 13, 10px)
+                strings of text, with and without quotes ("foo", 'bar', baz)
+                colors (blue, #04a3f9, rgba(255, 0, 0, 0.5))
+                booleans (true, false)
+                nulls
+                lists of values, separated by spaces or commas
+            </p>
+                </q>
+        </div>
+        <div id="slide7" class="step slide" data-x="3000" data-y="1000">
+            <q>
+                <span>1.3 - Opérations</span>
+                <p class="reduce-p">Tous les types prennent en charge les opérations d'égalité (== et! =). En outre, chaque type a ses propres opérations qu'il a un soutien spécial pour.</p>
+            </q>
+        </div>
+        <div id="slide8" class="step slide" data-x="4000" data-y="1000">
+            <q>
+                <span>1.4 - Interpolations</span>
+                <p class="reduce-p">Vous pouvez également utiliser les variables SassScript dans les sélecteurs et les noms de propriétés en utilisant la syntaxe d'interpolation #{}</p>
+            </q>
+        </div>
+
+
+        <!--2-->
+        <div id="slide9" class="step slide" data-x="0" data-y="2000">
+            <q>
+                <span>2 - Rules and Directives</span>
+                <p class="reduce-p">Sass prend en charge tous les CSS3 @ -rules, ainsi que certains supplémentaires spécifiques à Sass connus sous le nom de «directives». Ceux-ci ont des effets différents dans Sass</p>
+            </q>
+        </div>
+        <div id="slide10" class="step slide" data-x="1000" data-y="2000">
+            <q>
+                <span>2.1 - Import</span>
+                <p class="reduce-p">Sass étend la règle CSS @import pour lui permettre d'importer des fichiers SCSS et Sass. Tous les fichiers SCSS et Sass importés seront fusionnés en un seul fichier de sortie CSS. De plus, toutes les variables ou mixins définis dans les fichiers importés peuvent être utilisés dans le fichier principal</p>
+                
+            </q>
+        </div>
+        <div id="slide11" class="step slide" data-x="2000" data-y="2000">
+            <q>
+                <span>2.2 - Media</span>
+                <p class="reduce-p">
+Les directives @media dans Sass se comportent comme elles le font en simple CSS, avec une capacité supplémentaire: elles peuvent être imbriquées dans les règles CSS. Si une directive @media apparaît dans une règle CSS, elle sera émoussée jusqu'au niveau supérieur de la feuille de style, mettant tous les sélecteurs à l'intérieur de la règle. Cela facilite l'ajout de styles spécifiques aux médias sans avoir à répéter les sélecteurs ou à briser le flux de la feuille de style</p>
+            </q>
+        </div>
+        <div id="slide12" class="step slide" data-x="3000" data-y="2000">
+            <q>
+                <span>2.3 - Extends</span>
+                <p class="reduce-p">Il ya souvent des cas lors de la conception d'une page quand une classe doit avoir tous les styles d'une autre classe, ainsi que ses propres styles spécifiques. La manière la plus courante de manipuler ceci est d'employer à la fois la classe plus générale et la classe plus spécifique dans le HTML. Par exemple, supposons que nous ayons une conception pour une erreur normale et aussi pour une erreur grave.</p>
+            </q>
+        </div>
+        <div id="slide13" class="step slide" data-x="4000" data-y="2000">
+            <q>
+                <span>2.4 - At-Root</span>
+                <p class="reduce-p">La directive @ at-root provoque l'émission d'une ou plusieurs règles à la racine du document, plutôt que d'être imbriquées sous leurs sélecteurs parents</p>
+            </q>
+        </div>
+        <div id="slide14" class="step slide" data-x="5000" data-y="2000">
+            <q>
+                <span>2.5 - Debug</span>
+                <p class="reduce-p">La directive @debug imprime la valeur d'une expression SassScript dans le flux de sortie d'erreur standard. Il est utile pour déboguer les fichiers Sass qui ont compliqué SassScript en cours</p>
+                </q>
+        </div>
+        <div id="slide15" class="step slide" data-x="6000" data-y="2000">
+            <q>
+                <span>2.6 - Warn</span>
+                <p class="reduce-p">La directive @warn imprime la valeur d'une expression SassScript au flux de sortie d'erreur standard. Il est utile pour les bibliothèques qui doivent avertir les utilisateurs des dépréciations ou récupérer des erreurs mineures d'utilisation de mixin</p>
+            </q>
+        </div>
+        <div id="slide16" class="step slide" data-x="7000" data-y="2000">
+            <q>
+                <span>2.7 - Error</span>
+                <p class="reduce-p">La directive @error lance la valeur d'une expression SassScript comme une erreur fatale, y compris une trace de pile sympa. Il est utile pour valider les arguments des mixins et des fonctions</p>
+            </q>
+        </div>
+        <!--3-->
+        <div id="slide17" class="step slide" data-x="0" data-y="3000">
+            <q>
+                <span>3 - Control Directives et Expressions</span>
+                <p class="reduce-p">SassScript prend en charge les directives de contrôle et les expressions de base pour inclure des styles uniquement dans certaines conditions ou inclure le même style plusieurs fois avec des variantes.</p>
+            </q>
+        </div>
+        <div id="slide18" class="step slide" data-x="1000" data-y="3000">
+            <q>
+                <span>3.1 - If</span>
+                <p class="reduce-p">La fonction intégrée if () vous permet de dériver sur une condition et renvoie seulement l'un des deux résultats possibles. Il peut être utilisé dans n'importe quel contexte de script</p>
+            </q>
+        </div>
+        <div id="slide19" class="step slide" data-x="2000" data-y="3000">
+            <q>
+                <span>3.2 - For</span>
+                <p class="reduce-p">La directive @for renvoie plusieurs sorties d'un ensemble de styles. Pour chaque répétition, une variable de compteur est
+        utilisée pour ajuster la sortie.</p>
+            </q>
+        </div>
+        <div id="slide20" class="step slide" data-x="3000" data-y="3000">
+            <q>
+                <span>3.3 - Each</span>
+                <p class="reduce-p">Il @each directive a généralement la forme @each $ var dans <liste ou carte>. $ Var peut être n'importe quel nom de variable, comme $ length ou $ name, et <list or map> est une expression SassScript qui renvoie une liste ou une carte</p>
+            </q>
+        </div>
+        <div id="slide21" class="step slide" data-x="4000" data-y="3000">
+            <q>
+                <span>3.4 - While</span>
+                <p class="reduce-p">
+Il @while directive prend une expression SassScript et envoie à plusieurs reprises les styles imbriqués jusqu'à ce que l'instruction évalue à faux</p>
+            </q>
+        </div>
+        <!--4-->
+        <div id="slide22" class="step slide" data-x="0" data-y="4000">
+            <q>
+                <span>4 - Mixin  </span>
+                <p class="reduce-p">Les Mixins vous permettent de définir des styles qui peuvent être réutilisés tout au long de la feuille de style sans avoir à recourir à des classes non sémantiques comme .float-left. Mixins peut également contenir des règles CSS complètes et tout ce qui est autorisé ailleurs dans un document Sass. Ils peuvent même prendre des arguments qui vous permet de produire une grande variété de styles avec très peu de mixins</p>
+            </q>
+        </div>
+        <div id="slide23" class="step slide" data-x="1000" data-y="4000">
+            <q>
+                <span>4.1 - Defining a Mixin: @mixin</span>
+                <p class="reduce-p">Les mixins sont définis avec la directive @mixin. Il est suivi du nom du mixin et éventuellement des arguments, et d'un bloc contenant le contenu du mixin</p>
+            </q>
+        </div>
+        <div id="slide24" class="step slide" data-x="2000" data-y="4000">
+            <q>
+                <span>4.2 - Include</span>
+                <p class="reduce-p">Les mixins sont inclus dans le document avec la directive @include</p>
+            </q>
+        </div>
+        <div id="slide25" class="step slide" data-x="3000" data-y="4000">
+            <q>
+                <span>4.3 - Arguments</span>
+                <p class="reduce-p">Mixins peut prendre les valeurs SassScript comme arguments, qui sont donnés lorsque le mixin est inclus et mis à disposition dans le mixin en tant que variables.</p>
+            </q>
+        </div>
+        <div id="slide26" class="step slide" data-x="4000" data-y="4000">
+            <q>
+                <span>4.4 - Passer des blocs de contenu à un Mixin</span>
+                <p class="reduce-p">Il est possible de passer un bloc de styles au mixin pour le placement dans les styles inclus dans le mixin. Les styles apparaîtront à l'emplacement de toute directive @content trouvée dans le mixin</p>
+            </q>
+        </div>
+        <!--5-->
+        <div id="slide27" class="step slide" data-x="0" data-y="5000">
+            <q>
+                <span>5 - Fonctions</span>
+                <p class="reduce-p">Il est possible de définir vos propres fonctions dans sass et de les utiliser dans n'importe quelle valeur ou contexte de script</p>
+            </q>
+            <i><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">Listes des fonctions</a></i>
+        </div>
+
+    </div>
+    <script src="../../../bower_components/impress-js/js/impress.js"></script>
+    <script type="text/javascript">impress().init();</script>
+</body>
+
+</html>

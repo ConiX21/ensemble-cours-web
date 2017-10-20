@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "ArefRuqaa-Bold.ttf";
+  src: url("../../fonts/ArefRuqaa-Bold.ttf"); }
+
+body {
+  font-family: "ArefRuqaa-Bold.ttf"; }
+
+a:hover {
+  transform: rotate(20deg); }
+
+/*# sourceMappingURL=../maps/examples/sass/import.css.map */

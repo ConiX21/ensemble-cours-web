@@ -1,0 +1,8 @@
+$gradientOne:#414141;
+$gradientTwo:#868686;
+$top:200px;
+
+body{
+    margin-top:$top;
+    background: radial-gradient($gradientOne,$gradientTwo);
+}

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>SASS</title>
+    <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/rules-directives.css">
+    <style>
+        .btn.btn-primary{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2 - Rules Directives</h1>
+    <section>
+
+        <article class="element">
+            Commodo est laboris occaecat anim aliquip. Quis id cillum veniam elit. Voluptate irure sit cupidatat consequat cillum labore
+            consectetur incididunt. Officia nulla officia excepteur esse irure sint. Ad cupidatat amet ex Lorem adipisicing
+            commodo sint. Duis ea minim eiusmod proident amet Lorem amet. Adipisicing pariatur mollit mollit qui magna non
+            ipsum duis voluptate irure sint deserunt cillum proident.
+
+        </article>
+        <div class="element">
+            <a class="item" href="#">Read more</a>
+        </div>
+    </section>
+
+       <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Demo Code SASS</a>
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">SASS Code</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>
+@import 'import.scss';
+@import 'media.scss';
+
+h1{
+    color:$title-color;
+    font-size: $font-size;
+    @extend .special-title;
+}
+
+
+.item {
+    @extend a:hover;
+    color: #3d89c7;
+}
+                                </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
